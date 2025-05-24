@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 03fb3fb590f0d3fc08fd77a9b091ae80e411d355
 *{
     box-sizing: border-box;
 }
@@ -9,6 +13,7 @@ body {
     background-color: #EDF4FC;
 }
 
+<<<<<<< HEAD
 /* تحسين مظهر الأسئلة الشائعة وجعلها أكثر عصرية */
 .faq-container {
     max-width: 800px;
@@ -31,6 +36,19 @@ body {
 }
 .faq-item:last-child {
     border-bottom: none;
+=======
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+>>>>>>> 03fb3fb590f0d3fc08fd77a9b091ae80e411d355
 }
 
 .question {
@@ -38,6 +56,7 @@ body {
     color: #0dceb5;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     font-size: 1.15rem;
     cursor: pointer;
     transition: color 0.2s;
@@ -66,11 +85,25 @@ body {
     color: #333;
     margin-bottom: 6px;
 }
+=======
+    
+}
+.question img{
+    cursor: pointer;
+    width: 30px;
+    margin-left: 15px;
+}
+.answer {
+    display: none;
+}
+
+>>>>>>> 03fb3fb590f0d3fc08fd77a9b091ae80e411d355
 .show {
     display: block;
     margin-top: 10px;
     border-left: 3px solid #0dceb5;
     padding-left: 10px;
+<<<<<<< HEAD
     background: #f7fcfa;
     border-radius: 0 8px 8px 0;
     animation: fadeIn 0.4s;
@@ -89,3 +122,54 @@ body {
         font-size: 1rem;
     }
 }
+=======
+}
+=======
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: #EDF4FC;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    color: #0dceb5;
+    display: flex;
+    align-items: center;
+    
+}
+.question img{
+    cursor: pointer;
+    width: 30px;
+    margin-left: 15px;
+}
+.answer {
+    display: none;
+}
+
+.show {
+    display: block;
+    margin-top: 10px;
+    border-left: 3px solid #0dceb5;
+    padding-left: 10px;
+}
+>>>>>>> 77235a8 (Update)
+>>>>>>> 03fb3fb590f0d3fc08fd77a9b091ae80e411d355
