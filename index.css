@@ -908,3 +908,35 @@ a, .btn, button {
         justify-content: center !important;
     }
 }
+
+/* إضافة تنسيق خاص لدوائر بيانات التواصل أعلى النافبار */
+.contact-bar .bg-white.rounded-circle {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .contact-bar .row > div {
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 8px;
+  }
+  .contact-bar .d-flex.gap-2.ms-3 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    justify-content: center !important;
+  }
+}
+.contact-bar .fw-bold.text-white.small {
+  font-size: 1rem;
+}
+.contact-bar .d-flex.gap-2.ms-3 a img {
+  border-radius: 50%;
+  background: none;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.contact-bar .d-flex.gap-2.ms-3 a img:hover {
+  box-shadow: 0 4px 16px rgba(13,206,181,0.25);
+  transform: scale(1.1);
+}
