@@ -53,7 +53,7 @@ body {
 /* end progressbar */
 /* start footerup */
 .myfooterup {
-    background-color: var(--blue);
+    background: linear-gradient(90deg, #0DCEB5 0%, #0D8ECE 100%) !important;
     width: 100%;
     height: auto;
     padding: 7px 0;
@@ -121,6 +121,7 @@ body {
 
 /* start navbar */
 .navbar {
+    background: linear-gradient(90deg, #0D8ECE 0%, #0DCEB5 100%) !important;
     color: white;
 }
 
@@ -705,9 +706,11 @@ ul {
 }
 
 .footer {
-    background-color: #0f2765;
+    background: linear-gradient(90deg, #0DCEB5 0%, #0D8ECE 100%);
     padding: 70px 0;
     margin-top: 30px;
+    border-radius: 0;
+    color: #fff;
 }
 
 .footer-col {
@@ -793,7 +796,7 @@ ul {
 
 /* upfooter العصري */
 .footerup {
-    background: linear-gradient(90deg, #0DCEB5 0%, #0D8ECE 100%);
+    background: linear-gradient(90deg, #0DCEB5 0%, #0D8ECE 100%) !important;
     border-radius: 0;
 }
 .footerup .bg-white {
@@ -813,7 +816,7 @@ ul {
 }
 .footerup a img {
     border-radius: 50%;
-    background: #fff;
+    background:none;
     padding: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     transition: box-shadow 0.2s, transform 0.2s;
@@ -869,7 +872,7 @@ ul {
 .footer .social-links a img,
 .footer .d-flex a img {
     border-radius: 50%;
-    background: #fff;
+    background: none;
     padding: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     transition: box-shadow 0.2s, transform 0.2s;
