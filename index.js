@@ -7,18 +7,6 @@ function myfill() {
 }
 myfill()
 
-//menubar
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const mymenuicon = document.getElementById('mymenuicon');
-    const links = document.getElementById('links');
-
-    mymenuicon.addEventListener('click', function () {
-        links.classList.toggle('open');
-    });
-});
-
 // swiper
 var swiper = new Swiper(".swiper", {
     effect: "coverflow",

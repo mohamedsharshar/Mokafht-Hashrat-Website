@@ -26,8 +26,6 @@ try {
     echo 'Error: ' . $e->getMessage();
 }
 
-<?php
-
 try {
     $databaseFile = 'database.db';
     $db = new SQLite3($databaseFile);
