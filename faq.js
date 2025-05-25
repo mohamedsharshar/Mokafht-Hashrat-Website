@@ -111,4 +111,60 @@ document.addEventListener('DOMContentLoaded', function () {
         addBtn.style.display = '';
         addForm.reset();
     });
+
+    // تحديث التفاعل بعد جلب الأسئلة ديناميكياً
+    function faqPageInteractions() {
+        document.querySelectorAll('.question').forEach(function (q) {
+            q.addEventListener('click', function () {
+                const answer = q.nextElementSibling;
+                const icon = q.querySelector('.toggle-icon');
+                if (answer.classList.contains('show')) {
+                    answer.classList.remove('show');
+                    q.classList.remove('open');
+                    if (icon) icon.style.transform = '';
+                } else {
+                    document.querySelectorAll('.answer').forEach(a => a.classList.remove('show'));
+                    document.querySelectorAll('.question').forEach(qq => qq.classList.remove('open'));
+                    document.querySelectorAll('.toggle-icon').forEach(ic => ic.style.transform = '');
+                    answer.classList.add('show');
+                    q.classList.add('open');
+                    if (icon) icon.style.transform = 'rotate(45deg)';
+                }
+            });
+        });
+        document.querySelectorAll('.copy-answer').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const answer = btn.parentElement.innerText.replace('نسخ الإجابة', '').trim();
+                navigator.clipboard.writeText(answer);
+                btn.textContent = 'تم النسخ!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'نسخ الإجابة';
+                    btn.classList.remove('copied');
+                }, 1200);
+            });
+        });
+        // بحث ديناميكي
+        const searchInput = document.getElementById('faq-search');
+        const faqList = document.getElementById('faq-list');
+        const noResults = document.getElementById('no-results');
+        searchInput.addEventListener('input', function () {
+            const val = searchInput.value.trim();
+            let found = false;
+            document.querySelectorAll('.faq-item').forEach(function (item) {
+                const q = item.querySelector('.question').innerText;
+                if (q.includes(val)) {
+                    item.style.display = '';
+                    found = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            noResults.classList.toggle('hidden', found);
+        });
+    }
+
+    // استدعاء الدالة لتفعيل التفاعل على الأسئلة الموجودة
+    faqPageInteractions();
 });

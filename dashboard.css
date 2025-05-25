@@ -1,0 +1,139 @@
+/* لوحة تحكم عصرية للأسئلة والمستخدمين */
+body {
+    font-family: 'Tajawal', Arial, sans-serif;
+    background: linear-gradient(120deg, #f7fcfa 60%, #e0f7fa 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.dashboard-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(13,206,181,0.13);
+    padding: 32px 24px 40px 24px;
+}
+h1 {
+    text-align: center;
+    color: #0F2765;
+    margin-bottom: 18px;
+}
+.dashboard-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 28px;
+}
+.dashboard-nav button {
+    background: linear-gradient(90deg, #0DCEB5 0%, #0D8ECE 100%);
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 0.6rem 2.2rem;
+    font-size: 1.08rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+.dashboard-nav button.active, .dashboard-nav button:hover {
+    background: linear-gradient(90deg, #0D8ECE 0%, #0DCEB5 100%);
+    transform: scale(1.06);
+}
+.dashboard-section {
+    display: block;
+    animation: fadeIn 0.4s;
+}
+.dashboard-section.hidden {
+    display: none;
+}
+#add-faq-admin-form {
+    display: flex;
+    gap: 0.7rem;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+#add-faq-admin-form input, #add-faq-admin-form textarea {
+    border: 1.5px solid #0DCEB5;
+    border-radius: 12px;
+    padding: 0.7rem 1.1rem;
+    font-size: 1.08rem;
+    outline: none;
+    background: #f7fcfa;
+    transition: border 0.2s;
+    resize: none;
+}
+#add-faq-admin-form button[type="submit"] {
+    background: linear-gradient(90deg, #0DCEB5 0%, #0D8ECE 100%);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 1.3rem;
+    font-size: 1.08rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+#add-faq-admin-form button[type="submit"]:hover {
+    background: linear-gradient(90deg, #0D8ECE 0%, #0DCEB5 100%);
+    transform: scale(1.04);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+    background: #f7fcfa;
+    border-radius: 12px;
+    overflow: hidden;
+}
+thead {
+    background: #0DCEB5;
+    color: #fff;
+}
+th, td {
+    padding: 12px 10px;
+    text-align: right;
+    border-bottom: 1px solid #e0f7fa;
+    font-size: 1.05rem;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+tr:hover td {
+    background: #e0f7fa;
+}
+.action-btn {
+    background: #0D8ECE;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.3rem 1rem;
+    font-size: 0.98rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.action-btn.delete {
+    background: #e53935;
+}
+.action-btn.delete:hover {
+    background: #b71c1c;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 700px) {
+    .dashboard-container {
+        padding: 10px 2px 20px 2px;
+        border-radius: 12px;
+    }
+    th, td {
+        font-size: 0.95rem;
+        padding: 8px 4px;
+    }
+    #add-faq-admin-form {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
