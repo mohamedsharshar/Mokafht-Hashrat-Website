@@ -16,6 +16,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EDF4FC;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* up button */
@@ -653,136 +656,252 @@ main {
 /* نهاية تصميم section3 العصري */
 /* start section4 */
 .section4 {
-    overflow: hidden;
+  background: linear-gradient(120deg, #f7fcfa 60%, #e0f7fa 100%);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(13,206,181,0.10);
+  padding: 3.5rem 0 2.5rem 0;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
-
+.section4 h1 {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #0DCEB5;
+  letter-spacing: 1px;
+}
 .disp4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
 }
-
 .opin {
-    background-color: #fff;
-    width: 400px;
-    height: 300px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(13,206,181,0.13);
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  min-width: 320px;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+  position: relative;
 }
-
+.opin:hover {
+  box-shadow: 0 16px 48px rgba(13,206,181,0.22);
+  transform: translateY(-8px) scale(1.04);
+}
 .opindisp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-
+.mydisp img, .mydisp2 img, .mydisp3 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(13,206,181,0.13);
+  margin-bottom: 1.2rem;
+  border: 4px solid #e0f7fa;
+  background: #f7fcfa;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.opin:hover .mydisp img,
+.opin:hover .mydisp2 img,
+.opin:hover .mydisp3 img {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 32px rgba(13,206,181,0.18);
+}
 .opininfo {
-    text-align: center;
-    margin-top: 15px;
+  text-align: center;
+  margin-top: 0.5rem;
 }
-
 .opininfo h3 {
-    margin-bottom: 10px;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #0D8ECE;
 }
-
-
+.opininfo h4 {
+  font-size: 1.08rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 0.7rem;
+}
+.stars i {
+  color: #FFD700;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 1px 2px #0dceb52a);
+}
 @media (max-width:1024px) {
-    .disp4 {
-        display: block;
-        width: 100%;
-    }
-
-    .opin {
-        width: 100%;
-        margin: 0;
-        margin-top: 15px;
-    }
-
-    .opininfo {
-        margin-left: 0;
-    }
-
-    .section3 h3 {
-        text-align: center;
-    }
+  .disp4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .opin {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  .mydisp img, .mydisp2 img, .mydisp3 img {
+    width: 70px;
+    height: 70px;
+  }
 }
-
-/* end section4 */
-
+/* نهاية section4 العصري */
 /* start section5 */
+
+.section5 {
+  margin-top: 60px;
+  margin-bottom: 0;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 .display5 {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    min-height: 400px;
 }
 
 form {
-    background-color: white;
-    width: 600px;
-    height: 600px;
-    padding: 50px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(13,206,181,0.13);
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    gap: 1.1rem;
+    margin: 0 auto;
+    position: relative;
 }
 
-input {
-    outline: none;
-    border: 2px dotted #0dceb5;
-    padding: 6px 12px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+form h2 {
+    color: #0DCEB5;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.2rem;
 }
 
-label {
-    font-size: 18px;
+form label {
+    color: #0D8ECE;
     font-weight: 600;
-    color: #5a5a5a;
+    margin-bottom: 0.2rem;
+    text-align: right;
 }
 
-#lname,
-#lphone,
-#lq,
-.disp5 {
-    text-align: end;
+form input[type="text"],
+form input[type="date"] {
+    width: 100%;
+    padding: 0.7rem 2.2rem 0.7rem 0.7rem;
+    border-radius: 18px;
+    border: 1.5px solid #e0f7fa;
+    background: #f7fcfa;
+    font-size: 1.08rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(13,206,181,0.07);
+    outline: none;
 }
 
-.disp5 {
-    margin-bottom: 20px;
+form input[type="text"]:focus,
+form input[type="date"]:focus {
+    border: 1.5px solid #0DCEB5;
+    box-shadow: 0 4px 16px rgba(13,206,181,0.13);
 }
 
-#ldate {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bolder;
-    margin-bottom: 5px;
+form input[type="radio"] {
+    accent-color: #0DCEB5;
+    margin: 0 0.3rem 0 0.7rem;
 }
 
-#submit {
-    background-color: #0dceb5;
-    color: white;
-    text-align: center;
+form .disp5 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
-/* end section5 */
+form input[type="submit"] {
+    background: linear-gradient(90deg, #0DCEB5 0%, #0D8ECE 100%);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 0.7rem 0;
+    font-size: 1.15rem;
+    font-weight: bold;
+    box-shadow: 0 2px 12px rgba(13,206,181,0.13);
+    margin-top: 0.7rem;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0D8ECE 0%, #0DCEB5 100%);
+    transform: scale(1.04);
+    box-shadow: 0 6px 24px rgba(13,206,181,0.18);
+}
+
+form input[type="text"]::placeholder {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+/* أيقونات داخل الحقول */
+form .input-icon {
+  position: relative;
+  width: 100%;
+}
+form .input-icon i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0DCEB5;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* sticky footer */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  margin-top: auto !important;
+  border-radius: 0;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .section5 {
+    margin-top: 30px;
+  }
+}
+/* نهاية فورم الحجز العصري والفوتر اللاصق */
 /* start footer */
 .row {
     display: flex;

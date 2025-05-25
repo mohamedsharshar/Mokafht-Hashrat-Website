@@ -141,7 +141,7 @@
         </div>
     </div>
     
-    <div class="section3">
+    <div class="section3 mt-4">
         <div class="container">
             <div class="info4 d-flex justify-content-center flex-column align-items-center">
                 <h2 class="mb-4">خدماتنا</h2>
@@ -332,10 +332,16 @@
                         <div class="mydisp">
                             <img src="./imgs/women1.jpg" alt="عميلة - هايدي" title="هايدي - رأي عميلة" class="img-fluid">
                         </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                         <div class="opininfo">
                             <h3>هايدي</h3>
-                            <h4>مرحبا انا هيدى استفدت بشركه مكافحه حشرات وقوارض لكى اعالج مشكله حشرات المطبخ عندى
-                            </h4>
+                            <h4>مرحبا انا هيدى استفدت بشركه مكافحه حشرات وقوارض لكى اعالج مشكله حشرات المطبخ عندى</h4>
                         </div>
                     </div>
                 </div>
@@ -344,6 +350,13 @@
                     <div class="opindisp">
                         <div class="mydisp3">
                             <img src="./imgs/women2.jpg" alt="عميلة - مايا" title="مايا - رأي عميلة" class="img-fluid">
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                         <div class="opininfo">
                             <h3>مايا</h3>
@@ -355,7 +368,13 @@
                     <div class="opindisp">
                         <div class="mydisp2">
                             <img src="./imgs/man.jpg" alt="عميل - خالد" title="خالد - رأي عميل" class="img-fluid">
-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                         <div class="opininfo">
                             <h3>خالد</h3>
@@ -371,21 +390,29 @@
             <div class="display5">
                 <form action="index.php" method="post" data-aos="fade-up">
                     <h2>الحجز مع مكافحة الحشرات والقوارض</h2>
-                    <label id="lname">الأسم</label>
-                    <input type="text" name="name" id="name" placeholder="أدخل اسمك" title="الاسم" /><br />
-                    <label id="lphone">رقم الهاتف</label>
-                    <input type="text" maxlength="15" name="phone" id="phone" placeholder="رقم الهاتف" title="رقم الهاتف" /> <br>
-                    <label id="lq">هل انت عميل سابق؟</label><br>
-                    <div class="disp5">
-                        <label for="">yes</label>
-                        <input type="radio" value="yes" name="yes" title="عميل سابق">
-                        <label for="">No</label>
-                        <input type="radio" value="no" name="yes" title="عميل جديد"><br>
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <label id="lname">الأسم</label>
+                        <input type="text" name="name" id="name" placeholder="أدخل اسمك" title="الاسم" />
                     </div>
-                    <label id="ldate">احجز موعد</label>
-                    <input type="date" name="date" id="date" title="تاريخ الحجز"><br>
-                    <input type="submit" name="submit" id="submit">
-
+                    <div class="input-icon">
+                        <i class="fas fa-phone"></i>
+                        <label id="lphone">رقم الهاتف</label>
+                        <input type="text" maxlength="15" name="phone" id="phone" placeholder="رقم الهاتف" title="رقم الهاتف" />
+                    </div>
+                    <label id="lq">هل انت عميل سابق؟</label>
+                    <div class="disp5">
+                        <label for="yes">نعم</label>
+                        <input type="radio" value="yes" name="yes" id="yes" title="عميل سابق">
+                        <label for="no">لا</label>
+                        <input type="radio" value="no" name="yes" id="no" title="عميل جديد">
+                    </div>
+                    <div class="input-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label id="ldate">احجز موعد</label>
+                        <input type="date" name="date" id="date" title="تاريخ الحجز">
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="إرسال الحجز">
                 </form>
             </div>
         </div>
