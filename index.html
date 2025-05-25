@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكافحة الحشرات والقوارض</title>
+    <meta name="description" content="شركة مكافحة الحشرات والقوارض بالكويت - خدمات عصرية، سريعة، وآمنة مع ضمان الجودة وخدمة العملاء الممتازة.">
+    <meta name="keywords" content="مكافحة الحشرات, مكافحة القوارض, الكويت, إبادة الحشرات, رش مبيدات, مكافحة الصراصير, مكافحة الفئران, مكافحة بق الفراش, مكافحة النمل, مكافحة البعوض, مكافحة الحشرات المنزلية, pest control kuwait">
+    <meta name="author" content="مكافحة الحشرات والقوارض الكويت">
+    <title>مكافحة الحشرات والقوارض الكويت | خدمات عصرية وسريعة</title>
     <link rel="icon" href="./imgs/pngegg (1).png">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
 </head>
 
 <body>
-    <button class="up" id="up">
-        <img src="./imgs/up-arrow.png" alt="">
+    <button class="up" id="up" title="العودة للأعلى">
+        <img src="./imgs/up-arrow.png" alt="سهم للأعلى" title="العودة للأعلى">
     </button>
     <div class="progress-barr ">
         <div class="filled" id="filled"></div>
@@ -118,23 +122,25 @@
             </div>
         </div>
     </div>
+    
     <div class="section2">
         <div class="container">
             <div class="display2">
                 <div class="imge2" data-aos="zoom-in-up">
-                    <img src="./imgs/section2.jpg" width="500px">
+                    <img src="./imgs/section2.jpg" width="500" alt="خدمات مكافحة الحشرات" title="خدمات مكافحة الحشرات" class="img-fluid">
                 </div>
                 <div class="info3" data-aos="zoom-in-down">
-                    <button class="bt2"><a href="#">لماذا نحن</a></button>
+                    <button class="bt2">لماذا نحن</button>
                     <h1>مميزاتنا</h1>
                     <p>هناك الكثير من المميزات التي نمتاز بها في منطقتنا بمحافظه الكويت مما يجعلنا متفردين بهذا
                         المجال لان هدفنا القيمه مقابل سعر وارضاء العميل وتقديم افضل خدمة ممكنة</p>
-                    <button class="bt3"><a href="http://wa.me/+96560058331"> اتصل بنا</a></button>
+                    <button class="bt3" onclick="window.open('http://wa.me/+96560058331','_blank')">اتصل بنا</button>
                 </div>
 
             </div>
         </div>
     </div>
+    
     <div class="section3">
         <div class="container">
             <div class="info4 d-flex justify-content-center flex-column align-items-center">
@@ -142,7 +148,8 @@
                 <h3>نبذه عن اهم خدماتنا في مكافحة الحشرات والقوارض</h3>
             </div>
             <main>
-                <div class="swiper">
+                <!-- سلايدر عصري للخدمات -->
+                <div class="swiper position-relative">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="swiper-slide-img">
@@ -165,13 +172,9 @@
                                     <h2>كفالة وضمان سنه بأرخص الأسعار
                                     </h2>
                                     <p> معنا يمكنك تأمين منزلك بأرخص سعر ممكن منافس</p>
-                                    <a class="show-more"
-                                        href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA"
-                                        target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.5"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                                        </svg></a>
+                                    <a class="show-more" rel="noopener" target="_blank" title="اقرأ المزيد عن مكافحة الحشرات" href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA">
+                                        عرض المزيد
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -196,13 +199,9 @@
                                     <h2>مبيد صاعق لحشرات بق الفراش
                                     </h2>
                                     <p>نوفر باقه من احدث الوساءل المستخدمه لمكافحة بق الحشرات بكل أنواعها اقوي المبيدات الألمانية والإنجليزية المرخصه صحياً</p>
-                                    <a class="show-more"
-                                        href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA"
-                                        target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.5"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                                        </svg></a>
+                                    <a class="show-more" rel="noopener" target="_blank" title="اقرأ المزيد عن مكافحة الحشرات" href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA">
+                                        عرض المزيد
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -227,13 +226,9 @@
                                     <h2>مكافحة جميع أنواع الحشرات
                                     </h2>
                                     <p>مكافحه كل أنواع الحشرات التي تؤرق يومك وتعطل مهامك</p>
-                                    <a class="show-more"
-                                        href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA"
-                                        target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.5"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                                        </svg></a>
+                                    <a class="show-more" rel="noopener" target="_blank" title="اقرأ المزيد عن مكافحة الحشرات" href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA">
+                                        عرض المزيد
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -258,13 +253,9 @@
                                     <h2>قسم خاص لمكافحة صراصير المطبخ
                                     </h2>
                                     <p>نتكفل بتوفير كل المستلزمات اللازمه للقضاء على صراصير المطبخ نهاءيا</p>
-                                    <a class="show-more"
-                                        href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA"
-                                        target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.5"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                                        </svg></a>
+                                    <a class="show-more" rel="noopener" target="_blank" title="اقرأ المزيد عن مكافحة الحشرات" href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA">
+                                        عرض المزيد
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -289,13 +280,9 @@
                                     <h2>العجينة الألمانية</h2>
                                     <p>العجينه الألمانية الاصليه للقضاء على صراصير المطبخ بدون رش وبدون رائحه من احدث الوساءل للقضاء على صراصير المطبخ التي ابرزت جودتها في أوروبا
                                     </p>
-                                    <a class="show-more"
-                                        href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA"
-                                        target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.5"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                                        </svg></a>
+                                    <a class="show-more" rel="noopener" target="_blank" title="اقرأ المزيد عن مكافحة الحشرات" href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA">
+                                        عرض المزيد
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -319,17 +306,18 @@
                                 <div>
                                     <h2>اسعار خاصه للمطاعم والشركات ومواقع تحت الانشاء</h2>
                                     <p>لأى مطعم او شركه تحتاج التخلص من الحشرات نحن في الخدمه</p>
-                                    <a class="show-more"
-                                        href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA"
-                                        target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.5"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                                        </svg></a>
+                                    <a class="show-more" rel="noopener" target="_blank" title="اقرأ المزيد عن مكافحة الحشرات" href="https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA#%D9%85%D9%83%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA">
+                                        عرض المزيد
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- أزرار تنقل عصرية -->
+                    <div class="swiper-button-next custom-swiper-btn"></div>
+                    <div class="swiper-button-prev custom-swiper-btn"></div>
+                    <!-- نقاط مؤشر -->
+                    <div class="swiper-pagination custom-swiper-pagination"></div>
                 </div>
             </main>
         </div>
@@ -337,13 +325,12 @@
 
     <div class="section4" id="section4">
         <div class="container">
-            <h1 class="text-center mb-5" style="font-weight: bold;">اراء عملاؤنا في خدماتنا</h1>
+            <h1 class="text-center mb-5">آراء عملاؤنا في خدماتنا</h1>
             <div class="disp4">
                 <div class="opin" data-aos="flip-right">
                     <div class="opindisp">
                         <div class="mydisp">
-                            <img src="./imgs/women1.jpg" width="100px" height="100px"
-                                style="border-radius: 50px;background-position: center;background-size: cover;">
+                            <img src="./imgs/women1.jpg" alt="عميلة - هايدي" title="هايدي - رأي عميلة" class="img-fluid">
                         </div>
                         <div class="opininfo">
                             <h3>هايدي</h3>
@@ -356,8 +343,7 @@
                 <div class="opin" data-aos="flip-right">
                     <div class="opindisp">
                         <div class="mydisp3">
-                            <img src="./imgs/women2.jpg" width="100px" height="100px"
-                                style="border-radius: 50px;background-position: center;background-size: cover;">
+                            <img src="./imgs/women2.jpg" alt="عميلة - مايا" title="مايا - رأي عميلة" class="img-fluid">
                         </div>
                         <div class="opininfo">
                             <h3>مايا</h3>
@@ -368,8 +354,7 @@
                 <div class="opin" data-aos="flip-right">
                     <div class="opindisp">
                         <div class="mydisp2">
-                            <img src="./imgs/man.jpg" width="100px" height="100px"
-                                style="border-radius: 50px;background-position: center;background-size: cover;">
+                            <img src="./imgs/man.jpg" alt="عميل - خالد" title="خالد - رأي عميل" class="img-fluid">
 
                         </div>
                         <div class="opininfo">
@@ -381,25 +366,24 @@
             </div>
         </div>
     </div>
-    <div class="section5" style="margin-top: 100px;" id="section5">
+    <div class="section5" id="section5">
         <div class="container">
             <div class="display5">
                 <form action="index.php" method="post" data-aos="fade-up">
-                    <h2 style="text-align: end;font-weight: bold;color: #0DCEB5;">الحجز مع مكافحة الحشرات والقوارض
-                    </h2>
+                    <h2>الحجز مع مكافحة الحشرات والقوارض</h2>
                     <label id="lname">الأسم</label>
-                    <input type="text" name="name" id="name" /><br />
+                    <input type="text" name="name" id="name" placeholder="أدخل اسمك" title="الاسم" /><br />
                     <label id="lphone">رقم الهاتف</label>
-                    <input type="text" maxlength="15" name="phone" id="phone" /> <br>
+                    <input type="text" maxlength="15" name="phone" id="phone" placeholder="رقم الهاتف" title="رقم الهاتف" /> <br>
                     <label id="lq">هل انت عميل سابق؟</label><br>
                     <div class="disp5">
                         <label for="">yes</label>
-                        <input type="radio" value="yes" name="yes">
+                        <input type="radio" value="yes" name="yes" title="عميل سابق">
                         <label for="">No</label>
-                        <input type="radio" value="no" name="yes"><br>
+                        <input type="radio" value="no" name="yes" title="عميل جديد"><br>
                     </div>
                     <label id="ldate">احجز موعد</label>
-                    <input type="date" name="date" id="date"><br>
+                    <input type="date" name="date" id="date" title="تاريخ الحجز"><br>
                     <input type="submit" name="submit" id="submit">
 
                 </form>
