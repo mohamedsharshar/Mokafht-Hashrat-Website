@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - مكافحة الحشرات</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>لوحة التحكم</h1>
+        <nav class="dashboard-nav">
+            <button id="tab-faqs" class="active">الأسئلة الشائعة</button>
+            <button id="tab-users">المستخدمون</button>
+        </nav>
+        <section id="faqs-section" class="dashboard-section">
+            <h2>إدارة الأسئلة الشائعة</h2>
+            <form id="add-faq-admin-form">
+                <input type="text" id="admin-question" placeholder="السؤال الجديد" required>
+                <textarea id="admin-answer" placeholder="الإجابة" required></textarea>
+                <button type="submit">إضافة سؤال</button>
+            </form>
+            <table id="faqs-table">
+                <thead>
+                    <tr><th>السؤال</th><th>الإجابة</th><th>إجراءات</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <section id="users-section" class="dashboard-section hidden">
+            <h2>إدارة المستخدمين</h2>
+            <table id="users-table">
+                <thead>
+                    <tr><th>اسم المستخدم</th><th>البريد الإلكتروني</th><th>إجراءات</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

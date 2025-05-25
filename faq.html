@@ -1,73 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ</title>
+<title>الأسئلة الشائعة | مكافحة الحشرات والقوارض</title>
+<meta name="description" content="الأسئلة الشائعة حول خدمات مكافحة الحشرات والقوارض. إجابات احترافية ونصائح فعالة لحماية منزلك.">
 <link rel="icon" href="./imgs/pngegg (1).png">
 <link rel="stylesheet" href="faq.css">
 </head>
 <body>
 
-<div class="faq-container">
-    <div class="faq-item">
-        <div class="question" id="question1" >How can I control pests in my home? <img src="./imgs/add.png" onclick="toggleAnswer('answer1')"></div>
-        <div class="answer" id="answer1">To control pests in your home, you can:
-            <ul>
-                <li>Keep your living space clean and tidy to remove potential food sources for pests.</li>
-                <li>Seal up any cracks or gaps in walls, floors, and windows to prevent pests from entering.</li>
-                <li>Use traps or baits specific to the type of pests you're dealing with.</li>
-                <li>Consider using pesticides or hiring professional pest control services for severe infestations.</li>
-            </ul>
+<div class="faq-main-container">
+    <h1 class="faq-title">الأسئلة الشائعة</h1>
+    <div class="faq-actions">
+        <input type="text" id="faq-search" placeholder="ابحث في الأسئلة..." title="ابحث في الأسئلة" />
+        <button id="add-faq-btn" title="إضافة سؤال جديد"><span>+</span> إضافة سؤال</button>
+    </div>
+    <form id="add-faq-form" class="hidden">
+        <input type="text" id="new-question" placeholder="اكتب سؤالك هنا..." required>
+        <textarea id="new-answer" placeholder="اكتب الإجابة هنا..." required></textarea>
+        <button type="submit">إضافة</button>
+        <button type="button" id="cancel-add">إلغاء</button>
+    </form>
+    <div class="faq-container" id="faq-list">
+        <div class="faq-item">
+            <div class="question" id="question1"><span class="q-icon">1</span>كيف يمكنني مكافحة الحشرات في المنزل؟ <img src="./imgs/add.png" class="toggle-icon" alt="عرض الإجابة" title="عرض الإجابة"></div>
+            <div class="answer" id="answer1">
+                للحفاظ على منزلك خاليًا من الحشرات:
+                <ul>
+                    <li>حافظ على نظافة المكان وتخلص من بقايا الطعام.</li>
+                    <li>سد الشقوق والفتحات في الجدران والنوافذ.</li>
+                    <li>استخدم مصائد أو طعوم مناسبة لنوع الحشرة.</li>
+                    <li>في حال الانتشار الكبير، استعن بخدمات مكافحة الحشرات المتخصصة.</li>
+                </ul>
+                <button class="copy-answer" title="نسخ الإجابة">نسخ الإجابة</button>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" id="question2"><span class="q-icon">2</span>كيف أمنع دخول الحشرات إلى المنزل؟ <img src="./imgs/add.png" class="toggle-icon" alt="عرض الإجابة" title="عرض الإجابة"></div>
+            <div class="answer" id="answer2">
+                لمنع دخول الحشرات:
+                <ul>
+                    <li>سد جميع الفتحات والشقوق.</li>
+                    <li>تركيب شبك على النوافذ والأبواب.</li>
+                    <li>الحفاظ على نظافة المكان وعدم ترك الطعام مكشوفًا.</li>
+                    <li>المتابعة الدورية للكشف عن أي علامات وجود حشرات.</li>
+                </ul>
+                <button class="copy-answer" title="نسخ الإجابة">نسخ الإجابة</button>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" id="question3"><span class="q-icon">3</span>ما هي الطرق الطبيعية لمكافحة الحشرات؟<img src="./imgs/add.png" class="toggle-icon" alt="عرض الإجابة" title="عرض الإجابة"></div>
+            <div class="answer" id="answer3">
+                من الطرق الطبيعية:
+                <ul>
+                    <li>استخدام الزيوت العطرية مثل النعناع واللافندر لطرد الحشرات.</li>
+                    <li>زراعة نباتات طاردة للحشرات حول المنزل.</li>
+                    <li>استخدام التراب الدياتومي أو حمض البوريك للحشرات الزاحفة.</li>
+                    <li>الحفاظ على بيئة جافة ونظيفة.</li>
+                </ul>
+                <button class="copy-answer" title="نسخ الإجابة">نسخ الإجابة</button>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" id="question4"><span class="q-icon">4</span>هل المبيدات آمنة في وجود الأطفال أو الحيوانات؟<img src="./imgs/add.png" class="toggle-icon" alt="عرض الإجابة" title="عرض الإجابة"></div>
+            <div class="answer" id="answer4">
+                بعض المبيدات قد تكون ضارة إذا لم تُستخدم بشكل صحيح:
+                <ul>
+                    <li>اتبع تعليمات الاستخدام بدقة.</li>
+                    <li>أبعد الأطفال والحيوانات عن أماكن الرش حتى تجف.</li>
+                    <li>استخدم بدائل طبيعية أو منتجات آمنة عند الحاجة.</li>
+                    <li>استشر مختصًا عند الشك.</li>
+                </ul>
+                <button class="copy-answer" title="نسخ الإجابة">نسخ الإجابة</button>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" id="question5"><span class="q-icon">5</span>كيف أتخلص من النمل في المطبخ؟<img src="./imgs/add.png" class="toggle-icon" alt="عرض الإجابة" title="عرض الإجابة"></div>
+            <div class="answer" id="answer5">
+                للتخلص من النمل:
+                <ul>
+                    <li>حفظ الطعام بإحكام وتنظيف الانسكابات فورًا.</li>
+                    <li>استخدام طعوم أو مصائد خاصة بالنمل.</li>
+                    <li>مسح مسارات النمل بالخل أو الزيوت الحمضية.</li>
+                    <li>سد أماكن دخول النمل.</li>
+                </ul>
+                <button class="copy-answer" title="نسخ الإجابة">نسخ الإجابة</button>
+            </div>
         </div>
     </div>
-    <div class="faq-item">
-        <div class="question" id="question2" >How can I prevent pests from entering my home? <img src="./imgs/add.png" onclick="toggleAnswer('answer2')"></div>
-        <div class="answer" id="answer2">To prevent pests from entering your home, you can:
-            <ul>
-                <li>Seal up any cracks or gaps in walls, floors, and windows.</li>
-                <li>Keep your living space clean and tidy to remove potential food sources for pests.</li>
-                <li>Install screens on windows and doors to prevent pests from entering.</li>
-                <li>Regularly inspect your home for signs of pests and take preventive measures.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="faq-item">
-        <div class="question" id="question3" >What are some natural ways to control pests?<img src="./imgs/add.png" onclick="toggleAnswer('answer3')"></div>
-        <div class="answer" id="answer3">Some natural ways to control pests include:
-            <ul>
-                <li>Using essential oils like peppermint or lavender to repel certain pests.</li>
-                <li>Planting pest-repelling herbs and flowers around your home.</li>
-                <li>Using diatomaceous earth or boric acid to control crawling insects.</li>
-                <li>Keeping a clean and dry environment to prevent pest infestations.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="faq-item">
-        <div class="question" id="question4" >Are pesticides safe to use in homes with pets?<img src="./imgs/add.png" onclick="toggleAnswer('answer4')"></div>
-        <div class="answer" id="answer4">Some pesticides can be harmful to pets if not used properly. It's important to:
-            <ul>
-                <li>Read and follow the instructions on the pesticide label carefully.</li>
-                <li>Keep pets away from treated areas until the pesticide has dried or settled.</li>
-                <li>Consider using pet-safe or natural alternatives to traditional pesticides.</li>
-                <li>Consult with a veterinarian or pest control professional for advice on pet-safe pest control methods.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="faq-item">
-        <div class="question" id="question5" >How can I get rid of ants in my kitchen?<img src="./imgs/add.png" onclick="toggleAnswer('answer5')"></div>
-        <div class="answer" id="answer5">To get rid of ants in your kitchen, you can:
-            <ul>
-                <li>Seal up food containers and clean up spills promptly to remove food sources for ants.</li>
-                <li>Use ant baits or traps to lure and eliminate ants.</li>
-                <li>Apply ant deterrents such as vinegar or citrus oils along ant trails and entry points.</li>
-                <li>Identify and seal off ant entry points to prevent future infestations.</li>
-            </ul>
-        </div>
-    </div>
+    <div id="no-results" class="hidden">لا توجد نتائج مطابقة.</div>
 </div>
-<script src="faq.js">
-    
-</script>
+<script src="faq.js"></script>
 </body>
 </html>
